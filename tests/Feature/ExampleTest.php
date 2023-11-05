@@ -16,4 +16,12 @@ class ExampleTest extends TestCase
 
         $response->assertStatus(200);
     }
+
+    public function test_the_home_page_returns_a_value(): void
+    {
+        $response = $this->get('/');
+
+        $response->assertSee('Laravel');
+        $response->assertStatus(200);
+    }
 }
