@@ -21,4 +21,9 @@ class PostCommentController extends Controller
 
         return redirect()->back();
     }
+
+    public function create()
+    {
+        return view('posts.create');
+    }
 }
