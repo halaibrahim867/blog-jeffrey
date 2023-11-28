@@ -8,7 +8,7 @@
         id="{{$name}}"
         required
         class="border border-gray-400 p-2 w-full rounded">
-                    {{old($name)}}</textarea>
+                    {{$slot ?? old($name)}}</textarea>
 
     <x-form.error name="{{$name}}"/>
 </x-form.field>
